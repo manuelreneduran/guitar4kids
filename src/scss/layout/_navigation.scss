@@ -1,0 +1,15 @@
+.navigation {
+  &__link {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0.0120588em;
+  }
+  .nav-link {
+    color: $color-black !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
