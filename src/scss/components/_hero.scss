@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 6rem;
+  padding-top: 5rem;
   margin-top: -2em;
   background: linear-gradient(
     121.26deg,
@@ -13,6 +13,6 @@
     rgba(242, 243, 243, 0.3) 100%
   );
   &__home {
-    min-height: calc(100vh);
+    min-height: calc(100vh - 5em);
   }
 }

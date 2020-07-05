@@ -40,6 +40,12 @@ body {
   }
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 100;
+}
+
 h1 {
   @include respond(phone) {
     // width > 425?
@@ -55,18 +61,15 @@ h1 {
   }
   @include respond(tab-land) {
     // width > 1200
-    font-size: 4.5rem; //1 rem = 9px, 9/16 = 50%
+    font-size: 4rem; //1 rem = 9px, 9/16 = 50%
   }
 
   @include respond(big-desktop) {
-    font-size: 4.5rem; //1rem = 12, 12/16
+    font-size: 3rem; //1rem = 12, 12/16
   }
   @include respond(huge-desktop) {
     font-size: 4rem;
   }
-}
-
-h2 {
 }
 
 h3 {

@@ -13,12 +13,21 @@ export default ({ data }) => (
   <Layout home={true}>
     <SEO title="Home" description="This is a description" />
     <Hero home={true} img={data.defaultBcg.childImageSharp.fluid}>
-      <Container fluid>
+      <Container className="text-center" fluid>
         <Row>
-          <Col className="text-center">
+          <Col>
             <h1>
               Give them the gift of <StyledSpan>music</StyledSpan>
             </h1>
+          </Col>
+        </Row>
+        <Row className="justify-content-md-center pt-4">
+          <Col className="text-center" md="6">
+            <h2>
+              <StyledSpan>In-home</StyledSpan> and{" "}
+              <StyledSpan>remote</StyledSpan> music lessons in Austin, TX and
+              Portland, OR
+            </h2>
           </Col>
         </Row>
       </Container>
