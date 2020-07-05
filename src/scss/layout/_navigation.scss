@@ -1,4 +1,6 @@
 .navigation {
+  z-index: 1;
+  height: 2em;
   &__link {
     font-style: normal;
     font-weight: 100;
@@ -6,7 +8,6 @@
     letter-spacing: 0.0120588em;
   }
   .nav-link {
-    color: $color-black !important;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
