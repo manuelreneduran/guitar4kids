@@ -4,9 +4,14 @@
   opacity: 1 !important;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 6rem;
   margin-top: -2em;
-
+  background: linear-gradient(
+    121.26deg,
+    rgba(0, 0, 0, 0.7) 0.57%,
+    rgba(242, 243, 243, 0.3) 100%
+  );
   &__home {
     min-height: calc(100vh);
   }

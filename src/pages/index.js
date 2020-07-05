@@ -3,13 +3,25 @@ import { graphql } from "gatsby"
 import Hero from "../components/Hero"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import StyledSpan from "../components/StyledSpan"
 import Services from "../sections/home/Services"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
 export default ({ data }) => (
   <Layout home={true}>
     <SEO title="Home" description="This is a description" />
     <Hero home={true} img={data.defaultBcg.childImageSharp.fluid}>
-      <h1>Title</h1>
+      <Container fluid>
+        <Row>
+          <Col className="text-center">
+            <h1>
+              Give them the gift of <StyledSpan>music</StyledSpan>
+            </h1>
+          </Col>
+        </Row>
+      </Container>
     </Hero>
     <Services />
   </Layout>

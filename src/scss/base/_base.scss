@@ -7,38 +7,68 @@
 }
 
 html {
-  // This defines what 1rem is
-  // font-size: 87.5%;
-  //1 rem = 10px; 10px/16px = 62.5%
-  //1 rem = 14px: 14/16 = 87.5%
   @include respond(phone) {
-    // width < 1200?
+    // width > 425?
     font-size: 1rem; //1 rem = 9px, 9/16 = 50%
   }
   @include respond(tab-port) {
-    // width < 900?
-    font-size: 1.15rem; //1 rem = 8px, 8/16 = 50%
+    // width > 768?
+    font-size: 1rem; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(laptop) {
+    // width > 1024
+    font-size: 1.35rem;
   }
 
   @include respond(tab-land) {
-    // width < 1200?
-    font-size: 1.3rem; //1 rem = 9px, 9/16 = 50%
+    // width > 1200
+    font-size: 1.6rem; //1 rem = 9px, 9/16 = 50%
   }
 
   @include respond(big-desktop) {
-    font-size: 1.3rem; //1rem = 12, 12/16
+    font-size: 1.6rem; //1rem = 12, 12/16
+  }
+  @include respond(huge-desktop) {
+    font-size: 3rem;
   }
 }
 
 body {
-  box-sizing: border-box;
-
   @include respond(tab-port) {
     padding: 0;
   }
 }
 
-::selection {
-  background-color: $color-primary;
-  color: $color-white;
+h1 {
+  @include respond(phone) {
+    // width > 425?
+    font-size: 3rem; //1 rem = 9px, 9/16 = 50%
+  }
+  @include respond(tab-port) {
+    // width > 768?
+    font-size: 3.5rem; //1 rem = 8px, 8/16 = 50%
+  }
+  @include respond(laptop) {
+    // width > 1024
+    font-size: 3.5rem;
+  }
+  @include respond(tab-land) {
+    // width > 1200
+    font-size: 4.5rem; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 4.5rem; //1rem = 12, 12/16
+  }
+  @include respond(huge-desktop) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+}
+
+h3 {
+  font-size: 2.25rem;
 }
