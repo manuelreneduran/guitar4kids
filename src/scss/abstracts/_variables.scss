@@ -1,3 +1,19 @@
+//BOOTSTRAP
+$grid-breakpoints: (
+  xs: 0,
+  sm: 425px,
+  md: 768px,
+  lg: 1200px,
+  xl: 1440px,
+);
+
+$container-max-widths: (
+  sm: 425px,
+  md: 768px,
+  lg: 1200px,
+  xl: 1440px,
+);
+
 // COLORS
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
@@ -27,3 +43,5 @@ $default-font-size: 1.6rem;
 // $gutter-vertical: 8rem;
 // $gutter-vertical-small: 6rem;
 // $gutter-horizontal: 6rem;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

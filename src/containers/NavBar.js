@@ -6,7 +6,7 @@ const NavBar = () => {
     <Navbar
       className="navigation justify-content-end"
       collapseOnSelect
-      expand="sm"
+      expand="md"
     >
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
