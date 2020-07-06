@@ -10,7 +10,6 @@
 @include respond(huge-desktop) {
   .hero {
     @include hero-mixin(10rem);
-
     &__home {
       min-height: calc(100vh - 5em);
     }

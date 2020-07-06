@@ -1,5 +1,5 @@
 import React from "react"
-import NavBar from "./NavBar"
+import NavBar from "./Nav/NavBar"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "../scss/main.scss"

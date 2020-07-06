@@ -1,7 +1,11 @@
 import React from "react"
 
-const StyledSpan = ({ children }) => {
-  return <span className="styled__span">{children}</span>
+const StyledSpan = ({ children, hero }) => {
+  return (
+    <span className={hero ? "styled__span" : "styled__span__title"}>
+      {children}
+    </span>
+  )
 }
 
 export default StyledSpan

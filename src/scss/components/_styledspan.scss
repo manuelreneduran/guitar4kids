@@ -1,3 +1,6 @@
 .styled__span {
   color: $color-primary;
+  &__title {
+    color: $color-secondary;
+  }
 }

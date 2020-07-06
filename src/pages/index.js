@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Hero from "../components/Hero"
+import Hero from "../components/Hero/Hero"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StyledSpan from "../components/StyledSpan"
-import Services from "../sections/home/Services"
+import Services from "../components/Services/Services"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -22,17 +22,17 @@ export default ({ data }) => (
         <Row>
           <Col>
             <h1>
-              Give them the gift of <StyledSpan>music</StyledSpan>
+              Give them the gift of <StyledSpan hero={true}>music</StyledSpan>
             </h1>
           </Col>
         </Row>
         <Row className="justify-content-md-center pt-4">
           <Col className="text-center" md="6">
-            <h2>
-              <StyledSpan>In-home</StyledSpan> and{" "}
-              <StyledSpan>remote</StyledSpan> music lessons in Austin, TX and
-              Portland, OR
-            </h2>
+            <h3>
+              <StyledSpan hero={true}>In-home</StyledSpan> and{" "}
+              <StyledSpan hero={true}>remote</StyledSpan> music lessons in
+              Austin, TX and Portland, OR
+            </h3>
           </Col>
         </Row>
         <Row className="justify-content-md-center pt-4">
