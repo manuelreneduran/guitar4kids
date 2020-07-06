@@ -1,12 +1,11 @@
 import React from "react"
 import Card from "./Card"
 
-const Cards = ({ service }) => {
-  console.log(service)
+const Cards = ({ services }) => {
   return (
     <div>
-      {service.nodes.map(ele => (
-        <Card key={ele.id} data={ele} />
+      {services.nodes.map(ele => (
+        <Card key={ele.id} service={ele} />
       ))}
     </div>
   )

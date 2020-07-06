@@ -44,7 +44,7 @@ export default ({ data }) => (
         </Row>
       </Container>
     </Hero>
-    <Services />
+    <Services services={data.services} />
   </Layout>
 )
 
@@ -55,6 +55,18 @@ export const query = graphql`
         fluid(maxWidth: 4160, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
+      }
+    }
+    services: allContentfulService {
+      nodes {
+        id
+        image {
+          fixed(width: 270, height: 240) {
+            ...GatsbyContentfulFixed_withWebp
+          }
+        }
+        title
+        body
       }
     }
   }
