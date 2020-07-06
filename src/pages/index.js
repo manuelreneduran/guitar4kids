@@ -8,12 +8,17 @@ import Services from "../sections/home/Services"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Button from "react-bootstrap/Button"
 
 export default ({ data }) => (
   <Layout home={true}>
     <SEO title="Home" description="This is a description" />
-    <Hero home={true} img={data.defaultBcg.childImageSharp.fluid}>
-      <Container className="text-center" fluid>
+    <Hero
+      className="home"
+      home={true}
+      img={data.defaultBcg.childImageSharp.fluid}
+    >
+      <Container className="text-center home__container" fluid>
         <Row>
           <Col>
             <h1>
@@ -28,6 +33,13 @@ export default ({ data }) => (
               <StyledSpan>remote</StyledSpan> music lessons in Austin, TX and
               Portland, OR
             </h2>
+          </Col>
+        </Row>
+        <Row className="justify-content-md-center pt-4">
+          <Col className="text-center" md="6">
+            <Button variant="primary" size="md" type="button">
+              Book your first free lesson
+            </Button>
           </Col>
         </Row>
       </Container>
