@@ -3,7 +3,7 @@ import Card from "./Card"
 
 const Cards = ({ services }) => {
   return (
-    <div>
+    <div className="cards">
       {services.nodes.map(ele => (
         <Card key={ele.id} service={ele} />
       ))}

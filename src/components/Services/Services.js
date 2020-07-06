@@ -7,7 +7,7 @@ import Title from "../Title"
 
 const Services = ({ services }) => {
   return (
-    <Container className="mt-4 services">
+    <Container fluid className="mt-4 services">
       <Row>
         <Col>
           <Title title="Our Services" />
