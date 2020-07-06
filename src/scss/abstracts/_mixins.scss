@@ -63,3 +63,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
     } // 1441+
   }
 }
+
+//Component mixins for easy media queries
+
+@mixin hero-mixin($padding-top) {
+  background-position: center;
+  background-size: cover;
+  opacity: 1 !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: $padding-top;
+  margin-top: -2em;
+  background: linear-gradient(
+    121.26deg,
+    rgba(0, 0, 0, 0.7) 0.57%,
+    rgba(242, 243, 243, 0.3) 100%
+  );
+}

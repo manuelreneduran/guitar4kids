@@ -1,17 +1,7 @@
+@import "../abstracts/mixins";
+
 .hero {
-  background-position: center;
-  background-size: cover;
-  opacity: 1 !important;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 5rem;
-  margin-top: -2em;
-  background: linear-gradient(
-    121.26deg,
-    rgba(0, 0, 0, 0.7) 0.57%,
-    rgba(242, 243, 243, 0.3) 100%
-  );
+  @include hero-mixin(5rem);
   &__home {
     min-height: calc(100vh - 5em);
   }
@@ -19,19 +9,8 @@
 
 @include respond(huge-desktop) {
   .hero {
-    background-position: center;
-    background-size: cover;
-    opacity: 1 !important;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 10rem;
-    margin-top: -2em;
-    background: linear-gradient(
-      121.26deg,
-      rgba(0, 0, 0, 0.7) 0.57%,
-      rgba(242, 243, 243, 0.3) 100%
-    );
+    @include hero-mixin(10rem);
+
     &__home {
       min-height: calc(100vh - 5em);
     }
