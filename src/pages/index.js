@@ -61,8 +61,8 @@ export const query = graphql`
       nodes {
         id
         image {
-          fixed(width: 270, height: 240) {
-            ...GatsbyContentfulFixed_withWebp
+          fluid {
+            ...GatsbyContentfulFluid_withWebp
           }
         }
         title
