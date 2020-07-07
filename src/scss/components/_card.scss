@@ -1,5 +1,34 @@
-.card {
-  overflow: hidden;
-  border-radius: 20px;
+@import "../base/animations";
+
+.service__card {
+  position: relative;
+
+  color: white;
+  background-color: transparent;
+  width: 270px;
+  height: 240px;
   margin: 2rem;
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+  }
+  &__title,
+  &__body {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  &__title {
+    align-items: flex-end;
+  }
+  &__body {
+    align-items: center;
+  }
 }
