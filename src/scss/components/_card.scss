@@ -1,4 +1,5 @@
 @import "../base/animations";
+@import "../base/typography";
 
 .service__card {
   color: white;
@@ -62,6 +63,11 @@
 
   &__body {
     display: none;
+    font-size: 80%;
+  }
+
+  &__title {
+    @extend .card__title;
   }
 
   &__body,
