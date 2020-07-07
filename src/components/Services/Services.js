@@ -10,7 +10,7 @@ const Services = ({ services }) => {
     <Container fluid className="mt-4 services">
       <Row>
         <Col>
-          <Title title="Our Services" />
+          <Title title="OUR SERVICES" />
         </Col>
       </Row>
       <Row>

@@ -9,7 +9,6 @@ const Title = ({ title }) => {
       <h2>
         {words.join(" ")} <StyledSpan home={false}>{lastWord}</StyledSpan>{" "}
       </h2>
-      <div className="line"></div>
     </div>
   )
 }

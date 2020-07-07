@@ -2,77 +2,40 @@
 @import "../base/typography";
 
 .service__card {
-  color: white;
+  color: black;
   background-color: transparent;
-  width: 12rem;
-  height: 10rem;
   margin: 2rem;
+  padding: 0.5rem;
+  width: 12rem;
   text-align: center;
   border-radius: 20px;
 
-  &__inner {
-    height: 100%;
+  &__top {
     width: 100%;
+    height: 10rem;
+  }
+
+  &__bottom {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem;
-    box-sizing: border-box;
+    justify-content: space-around;
+    font-size: 80%;
+    font-weight: 300;
+  }
+
+  &__title {
+    text-transform: uppercase;
   }
 
   &__image {
     width: 100%;
     height: 100%;
     min-height: 10rem;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-position: center;
     background-size: cover;
     opacity: 1 !important;
     border-radius: 20px;
     overflow: hidden;
-  }
-
-  &:hover,
-  &__inner:hover,
-  &__title:hover {
-    .service__card__body {
-      display: block;
-    }
-
-    .service__card__title {
-      display: none;
-    }
-
-    .service__card__image {
-      width: 100%;
-      height: 100%;
-      min-height: 10rem;
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)
-      ) !important;
-      background-position: center;
-      background-size: cover;
-      opacity: 1 !important;
-      border-radius: 20px;
-      overflow: hidden;
-    }
-  }
-
-  &__body {
-    display: none;
-    font-size: 80%;
-  }
-
-  &__title {
-    @extend .card__title;
-  }
-
-  &__body,
-  &__image,
-  &__title {
-    animation: blurIn 1s ease-out;
   }
 }

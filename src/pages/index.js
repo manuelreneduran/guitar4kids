@@ -57,7 +57,7 @@ export const query = graphql`
         }
       }
     }
-    services: allContentfulService {
+    services: allContentfulService(sort: { fields: createdAt }) {
       nodes {
         id
         image {

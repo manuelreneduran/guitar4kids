@@ -6,12 +6,13 @@ const Card = ({ service: { image, body, title } }) => {
   return (
     <>
       <div className="service__card">
-        <BcgImage fluid={image.fluid} className="service__card__image">
-          <div className="service__card__inner">
-            <span className="service__card__body">{body}</span>
-            <span className="service__card__title">{title} </span>
-          </div>
-        </BcgImage>
+        <div className="service__card__top">
+          <Img fluid={image.fluid} className="service__card__image" />
+        </div>
+        <div className="service__card__bottom">
+          <h6 className="service__card__title">{title}</h6>
+          <span className="service__card__desc">{body}</span>
+        </div>
       </div>
     </>
   )
