@@ -27,4 +27,14 @@
 //   xl: 1440px,
 // );
 
+.container-fluid,
+.row,
+.col {
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn {
+  width: "18rem";
+}
 // @import "../../../node_modules/bootstrap/scss/bootstrap";

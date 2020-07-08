@@ -46,7 +46,7 @@ export default ({ data }) => (
       </Container>
     </Hero>
     <Services services={data.services} />
-    <Testimonials />
+    <Testimonials testimonials={data.testimonials} />
   </Layout>
 )
 
@@ -57,6 +57,16 @@ export const query = graphql`
         fluid(maxWidth: 4160, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
+      }
+    }
+
+    testimonials: allContentfulTestimonial(sort: { fields: createdAt }) {
+      nodes {
+        childContentfulTestimonialBodyTextNode {
+          body
+        }
+        name
+        id
       }
     }
 

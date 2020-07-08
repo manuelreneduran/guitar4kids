@@ -7,18 +7,20 @@ import Title from "../Title"
 
 const Services = ({ services }) => {
   return (
-    <Container fluid className="mt-4 services">
-      <Row>
-        <Col>
-          <Title title="OUR SERVICES" />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Cards services={services} />
-        </Col>
-      </Row>
-    </Container>
+    <div>
+      <Container fluid className="mt-4 services">
+        <Row>
+          <Col>
+            <Title title="OUR SERVICES" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Cards services={services} />
+          </Col>
+        </Row>
+      </Container>
+    </div>
   )
 }
 

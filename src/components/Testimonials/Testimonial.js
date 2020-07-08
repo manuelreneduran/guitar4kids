@@ -1,9 +1,14 @@
 import React from "react"
 
-const Testimonial = ({ data: { body, name } }) => {
+const Testimonial = ({
+  data: {
+    childContentfulTestimonialBodyTextNode: { body },
+    name,
+  },
+}) => {
   return (
     <div className="testimonial">
-      <div className="testimonial__body">{body}</div>
+      <div className="testimonial__body">"{body}"</div>
       <div className="testimonial__name">--{name}</div>
     </div>
   )
