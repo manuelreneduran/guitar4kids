@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Button from "react-bootstrap/Button"
+import Testimonials from "../components/Testimonials/Testimonials"
 
 export default ({ data }) => (
   <Layout home={true}>
@@ -45,6 +46,7 @@ export default ({ data }) => (
       </Container>
     </Hero>
     <Services services={data.services} />
+    <Testimonials />
   </Layout>
 )
 
@@ -57,6 +59,7 @@ export const query = graphql`
         }
       }
     }
+
     services: allContentfulService(sort: { fields: createdAt }) {
       nodes {
         id

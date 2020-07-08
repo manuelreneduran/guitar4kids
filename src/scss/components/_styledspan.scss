@@ -3,4 +3,9 @@
   &__title {
     color: $color-secondary;
   }
+
+  &,
+  &__title {
+    margin-left: 10px;
+  }
 }

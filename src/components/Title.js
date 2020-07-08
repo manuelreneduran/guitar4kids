@@ -5,8 +5,8 @@ const Title = ({ title }) => {
   const words = title.split(" ")
   const lastWord = words.splice(-1, 1)
   return (
-    <div className="container">
-      <h2>
+    <div className="container ">
+      <h2 className="d-flex justify-content-center">
         {words.join(" ")} <StyledSpan home={false}>{lastWord}</StyledSpan>{" "}
       </h2>
     </div>
