@@ -9,13 +9,9 @@ import Col from "react-bootstrap/Col"
 
 export default ({ data }) => {
   return (
-    <Layout home={false}>
+    <Layout home={false} className="faq">
       <SEO title="faq" description="faq page" />
-      <Hero
-        className="faq"
-        home={false}
-        img={data.defaultBcg.childImageSharp.fluid}
-      >
+      <Hero home={false} img={data.defaultBcg.childImageSharp.fluid}>
         <Container className="text-center faq__hero" fluid>
           <Row>
             <Col>
@@ -30,7 +26,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "pages/landing/hero.jpg" }) {
+    defaultBcg: file(relativePath: { eq: "pages/faq/hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 4160, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp

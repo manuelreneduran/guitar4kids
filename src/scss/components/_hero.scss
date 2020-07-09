@@ -1,11 +1,15 @@
 @import "../abstracts/mixins";
 
 .hero {
+  height: 100%;
   &__home {
     min-height: calc(100vh);
   }
   &__page {
+    clip-path: polygon(100% 30%, 100% 100%, 0 70%, 0 0);
+    background-color: $color-primary;
     min-height: calc(30vh);
+    height: 30vh;
   }
 }
 
@@ -41,7 +45,6 @@
     }
     &__page {
       @include hero-mixin;
-      height: 40vh;
       min-height: 40vh;
     }
   }
