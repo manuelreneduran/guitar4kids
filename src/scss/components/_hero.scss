@@ -1,9 +1,47 @@
 @import "../abstracts/mixins";
 
 .hero {
-  @include hero-mixin(5rem);
   &__home {
     min-height: calc(100vh - 5em);
+  }
+  &__page {
+    min-height: calc(30vh);
+  }
+}
+
+@include respond(phone) {
+  .hero {
+    @include hero-mixin(5rem);
+    &__home {
+      min-height: calc(100vh - 5em);
+    }
+    &__page {
+      min-height: calc(30vh);
+    }
+  }
+}
+
+@include respond(tab-port) {
+  .hero {
+    @include hero-mixin(5rem);
+    &__home {
+      min-height: calc(100vh - 5em);
+    }
+    &__page {
+      min-height: calc(30vh);
+    }
+  }
+}
+
+@include respond(laptop) {
+  .hero {
+    @include hero-mixin(7rem);
+    &__home {
+      min-height: calc(100vh - 5em);
+    }
+    &__page {
+      min-height: calc(30vh);
+    }
   }
 }
 
@@ -12,6 +50,9 @@
     @include hero-mixin(10rem);
     &__home {
       min-height: calc(100vh - 5em);
+    }
+    &__page {
+      min-height: calc(30vh);
     }
   }
 }

@@ -1,6 +1,8 @@
 import React from "react"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 const NavBar = ({ home }) => {
   return (
     <Navbar
@@ -8,25 +10,29 @@ const NavBar = ({ home }) => {
       collapseOnSelect
       expand="sm"
       variant="dark"
+      fixed="top"
     >
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto mr-auto">
-          <Nav.Link
-            className="navigation__link"
-            style={home ? { color: "white" } : { color: "black" }}
-            href="#Home"
-          >
-            Home
-          </Nav.Link>
-          <Nav.Link
-            className="navigation__link"
-            style={home ? { color: "white" } : { color: "black" }}
-            style={home ? { color: "white" } : { color: "black" }}
-            href="#FAQ"
-          >
-            FAQ
-          </Nav.Link>
+          <AniLink fade to="/">
+            <Nav.Link
+              className="navigation__link"
+              style={home ? { color: "white" } : { color: "black" }}
+              href="#Home"
+            >
+              Home
+            </Nav.Link>
+          </AniLink>
+          <AniLink fade to="faq">
+            <Nav.Link
+              className="navigation__link"
+              style={home ? { color: "white" } : { color: "black" }}
+              href="#FAQ"
+            >
+              FAQ
+            </Nav.Link>
+          </AniLink>
           <Nav.Link
             className="navigation__link"
             style={home ? { color: "white" } : { color: "black" }}
