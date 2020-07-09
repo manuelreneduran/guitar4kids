@@ -37,4 +37,9 @@
 .btn {
   width: "18rem";
 }
+
+.navbar-collapse.show {
+  background-color: $color-grey-dark-1;
+  color: black;
+}
 // @import "../../../node_modules/bootstrap/scss/bootstrap";
