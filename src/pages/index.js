@@ -13,13 +13,13 @@ import Testimonials from "../components/Testimonials/Testimonials"
 
 export default ({ data }) => (
   <Layout home={true}>
-    <SEO title="Home" description="This is a description" />
+    <SEO title="Home" description="landing page" />
     <Hero
       className="home"
       home={true}
       img={data.defaultBcg.childImageSharp.fluid}
     >
-      <Container className="text-center home__container" fluid>
+      <Container className="text-center home__hero" fluid>
         <Row>
           <Col>
             <h1>

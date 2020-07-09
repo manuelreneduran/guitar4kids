@@ -2,7 +2,7 @@
 
 .hero {
   &__home {
-    min-height: calc(100vh - 5em);
+    min-height: calc(100vh);
   }
   &__page {
     min-height: calc(30vh);
@@ -11,9 +11,9 @@
 
 @include respond(phone) {
   .hero {
-    @include hero-mixin(5rem);
+    @include hero-mixin;
     &__home {
-      min-height: calc(100vh - 5em);
+      min-height: calc(100vh);
     }
     &__page {
       min-height: calc(30vh);
@@ -23,9 +23,9 @@
 
 @include respond(tab-port) {
   .hero {
-    @include hero-mixin(5rem);
+    @include hero-mixin;
     &__home {
-      min-height: calc(100vh - 5em);
+      min-height: calc(100vh);
     }
     &__page {
       min-height: calc(30vh);
@@ -35,23 +35,26 @@
 
 @include respond(laptop) {
   .hero {
-    @include hero-mixin(7rem);
     &__home {
-      min-height: calc(100vh - 5em);
+      @include hero-mixin;
+      min-height: calc(100vh);
     }
     &__page {
-      min-height: calc(30vh);
+      @include hero-mixin;
+      height: 40vh;
+      min-height: 40vh;
     }
   }
 }
 
 @include respond(huge-desktop) {
   .hero {
-    @include hero-mixin(10rem);
+    @include hero-mixin;
     &__home {
-      min-height: calc(100vh - 5em);
+      min-height: calc(100vh);
     }
     &__page {
+      height: 5rem;
       min-height: calc(30vh);
     }
   }

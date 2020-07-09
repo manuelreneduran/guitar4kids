@@ -66,14 +66,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 //Component mixins for easy media queries
 
-@mixin hero-mixin($padding-top) {
+@mixin hero-mixin() {
   background-position: center;
   background-size: cover;
   opacity: 1 !important;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: $padding-top;
+  align-items: center;
   background: linear-gradient(
     121.26deg,
     rgba(0, 0, 0, 0.7) 0.57%,
