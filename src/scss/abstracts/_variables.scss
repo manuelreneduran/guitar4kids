@@ -6,9 +6,11 @@ $color-secondary: #c82f07;
 $color-grey-light-1: #f2f3f3;
 $color-grey-light-2: #e5e5e5;
 $color-grey-light-3: #ededed;
+$color-grey-light-3-faded: #ededede3;
 
 $color-grey-dark: #c4c4c4;
 $color-grey-dark-1: #4b4b4b;
+$color-grey-dark-1-faded: #4b4b4bd3;
 
 $color-white: #fff;
 $color-black: #000;
@@ -37,7 +39,7 @@ $theme-colors: (
     // warning: $yellow,
     // danger: $red,
     // light: $gray-100,
-    // dark: $gray-800,,,,,,,,,,
+    // dark: $gray-800,,,,,,,,,,,,,,
 ) !default;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
