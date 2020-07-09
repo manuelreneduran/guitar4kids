@@ -1,4 +1,9 @@
 .home {
+  .navbar-dark,
+  .navbar-nav,
+  .nav-link {
+    color: white !important;
+  }
   &__container {
     display: flex;
     flex-direction: column;

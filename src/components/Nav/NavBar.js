@@ -9,7 +9,7 @@ const NavBar = ({ home }) => {
       className="navigation justify-content-end"
       collapseOnSelect
       expand="sm"
-      variant="dark"
+      variant={home ? "dark" : "light"}
       fixed="top"
     >
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

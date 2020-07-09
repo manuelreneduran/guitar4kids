@@ -38,8 +38,24 @@
   width: "18rem";
 }
 
-.navbar-collapse.show {
-  background-color: $color-grey-dark-1;
-  color: black;
+.navbar-dark {
+  color: white !important;
+}
+.navbar-light {
+  .show {
+    background-color: $color-grey-light-3;
+    .nav-link {
+      color: white;
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-collapse.show {
+    background-color: $color-grey-dark-1;
+    .nav-link {
+      color: white;
+    }
+  }
 }
 // @import "../../../node_modules/bootstrap/scss/bootstrap";
