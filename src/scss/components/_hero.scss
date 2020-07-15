@@ -12,6 +12,10 @@
   }
 }
 
+.hero__wrapper {
+  background-color: $color-primary;
+}
+
 @include respond(phone) {
   .hero {
     @include hero-mixin;
@@ -21,6 +25,7 @@
     }
     &__page {
       min-height: calc(30vh);
+      clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 65%);
     }
   }
 }
@@ -34,6 +39,7 @@
     }
     &__page {
       min-height: calc(30vh);
+      clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 65%);
     }
   }
 }
@@ -48,6 +54,7 @@
     &__page {
       @include hero-mixin;
       min-height: 40vh;
+      clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 65%);
     }
   }
 }
@@ -62,6 +69,7 @@
     &__page {
       height: 5rem;
       min-height: calc(30vh);
+      clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 65%);
     }
   }
 }
