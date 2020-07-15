@@ -9,7 +9,6 @@ const NavBar = () => {
       className="navigation justify-content-end"
       collapseOnSelect
       expand="sm"
-      fixed="top"
     >
       <Navbar.Toggle
         style={{ borderColor: "rgba(0, 0, 0, 0.5)" }}

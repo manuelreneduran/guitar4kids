@@ -3,7 +3,7 @@
 .hero {
   height: 100%;
   &__home {
-    min-height: calc(100vh);
+    min-height: calc(93vh);
     background-position: bottom;
   }
   &__page {
@@ -16,7 +16,7 @@
   .hero {
     @include hero-mixin;
     &__home {
-      min-height: calc(100vh);
+      min-height: calc(93vh);
       background-position: bottom;
     }
     &__page {
@@ -29,7 +29,7 @@
   .hero {
     @include hero-mixin;
     &__home {
-      min-height: calc(100vh);
+      min-height: calc(93vh);
       background-position: bottom;
     }
     &__page {
@@ -42,7 +42,7 @@
   .hero {
     &__home {
       @include hero-mixin;
-      min-height: calc(100vh);
+      min-height: calc(93vh);
       background-position: bottom;
     }
     &__page {
@@ -56,7 +56,7 @@
   .hero {
     @include hero-mixin;
     &__home {
-      min-height: calc(100vh);
+      min-height: calc(93vh);
       background-position: bottom;
     }
     &__page {
