@@ -4,10 +4,9 @@
   height: 100%;
   &__home {
     min-height: calc(100vh);
+    background-position: bottom;
   }
   &__page {
-    clip-path: polygon(100% 30%, 100% 100%, 0 70%, 0 0);
-    background-color: $color-primary;
     min-height: calc(30vh);
     height: 30vh;
   }
@@ -18,6 +17,7 @@
     @include hero-mixin;
     &__home {
       min-height: calc(100vh);
+      background-position: bottom;
     }
     &__page {
       min-height: calc(30vh);
@@ -30,6 +30,7 @@
     @include hero-mixin;
     &__home {
       min-height: calc(100vh);
+      background-position: bottom;
     }
     &__page {
       min-height: calc(30vh);
@@ -42,6 +43,7 @@
     &__home {
       @include hero-mixin;
       min-height: calc(100vh);
+      background-position: bottom;
     }
     &__page {
       @include hero-mixin;
@@ -55,6 +57,7 @@
     @include hero-mixin;
     &__home {
       min-height: calc(100vh);
+      background-position: bottom;
     }
     &__page {
       height: 5rem;
