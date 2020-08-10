@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero/Hero"
@@ -9,8 +9,28 @@ import Col from "react-bootstrap/Col"
 import Question from "../components/FAQ/Question"
 import Title from "../components/Title"
 
-export default ({ data }) => {
-  console.log(data)
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      defaultBcg: file(relativePath: { eq: "pages/faq/hero.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 4160, quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      allContentfulFaqQuestion {
+        nodes {
+          answer {
+            answer
+          }
+          question
+        }
+      }
+    }
+  `)
+
   return (
     <Layout home={false} className="faq">
       <SEO title="faq" description="faq page" />
@@ -44,24 +64,3 @@ export default ({ data }) => {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    defaultBcg: file(relativePath: { eq: "pages/faq/hero.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 4160, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-
-    allContentfulFaqQuestion {
-      nodes {
-        answer {
-          answer
-        }
-        question
-      }
-    }
-  }
-`

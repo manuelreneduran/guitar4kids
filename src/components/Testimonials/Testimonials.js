@@ -17,8 +17,8 @@ const Testimonials = ({ testimonials }) => {
         </Row>
         <Row className="d-flex justify-content-center">
           {testimonials.nodes.map(ele => (
-            <Col className="p-0" sm={12} md={6} lg={4} xl={5}>
-              <Testimonial key={ele.id} data={ele} />
+            <Col key={ele.id} className="p-0" sm={12} md={6} lg={4} xl={5}>
+              <Testimonial data={ele} />
             </Col>
           ))}
         </Row>
