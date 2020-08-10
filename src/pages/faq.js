@@ -23,7 +23,7 @@ export default ({ data }) => {
           </Row>
         </Container>
       </Hero>
-      <Container className="mt-4">
+      <Container className="mt-4 mb-4">
         <Row style={{ width: "100%" }}>
           <Col>
             <Title title="Frequently Asked Questions" />

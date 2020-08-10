@@ -3,6 +3,7 @@ import NavBar from "./Nav/NavBar"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "../scss/main.scss"
+import Footer from "./Footer"
 const Layout = ({ children, home }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -19,6 +20,7 @@ const Layout = ({ children, home }) => {
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <NavBar home={home} />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }

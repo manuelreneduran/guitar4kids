@@ -11,11 +11,11 @@ const Question = ({ question, answer }) => {
           className="accordion__card__header"
           eventKey="0"
         >
-          <div className="accordion__card__lead__text">Q.</div> {question}
+          <div className="accordion__card__lead__text">Q. </div> {question}
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="0">
           <Card.Body className="accordion__body">
-            <div className="lead__text">A.</div>
+            <div className="lead__text">A. </div>
             {answer}
           </Card.Body>
         </Accordion.Collapse>
