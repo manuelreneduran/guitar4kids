@@ -1,0 +1,25 @@
+.accordion {
+  &__card {
+    cursor: pointer;
+    &__header {
+      border-left: 7px solid $color-secondary;
+      background-color: $color-grey-light-3;
+    }
+    &__lead__text {
+      display: inline;
+      color: $color-secondary;
+      font-size: 2em;
+    }
+  }
+  &__body {
+    cursor: default;
+    background-color: $color-grey-light-1;
+    border-left: 7px solid $color-grey-light-3;
+
+    .lead__text {
+      display: inline;
+      color: $color-grey-dark-1;
+      font-size: 2em;
+    }
+  }
+}
