@@ -6,8 +6,11 @@ import Hero from "../components/Hero/Hero"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Question from "../components/FAQ/Question"
+import Title from "../components/Title"
 
 export default ({ data }) => {
+  console.log(data)
   return (
     <Layout home={false} className="faq">
       <SEO title="faq" description="faq page" />
@@ -20,6 +23,24 @@ export default ({ data }) => {
           </Row>
         </Container>
       </Hero>
+      <Container className="mt-4">
+        <Row style={{ width: "100%" }}>
+          <Col>
+            <Title title="Frequently Asked Questions" />
+          </Col>
+        </Row>
+        <Row style={{ width: "100%" }}>
+          <Col>
+            {data.allContentfulFaqQuestion.nodes.map(ele => (
+              <Question
+                key={ele.question}
+                question={ele.question}
+                answer={ele.answer.answer}
+              />
+            ))}
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   )
 }
@@ -31,6 +52,15 @@ export const query = graphql`
         fluid(maxWidth: 4160, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
+      }
+    }
+
+    allContentfulFaqQuestion {
+      nodes {
+        answer {
+          answer
+        }
+        question
       }
     }
   }

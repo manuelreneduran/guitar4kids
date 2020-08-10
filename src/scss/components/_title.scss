@@ -1,14 +1,7 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  text-transform: uppercase;
+h2 {
+  font-weight: 300;
   .line {
     width: 150px;
     border: 1px solid red;
-  }
-  h2 {
-    font-weight: 300;
   }
 }
